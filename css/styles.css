@@ -1,0 +1,313 @@
+body {
+    background: #f8f4f4;
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* 20%, 60%, 20% layout */
+    gap: 2rem;
+    align-items: start;
+    /* Align items to the top */
+    /* Adjust the gap as needed */
+}
+
+.left-aside {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    margin: 0 5%;
+}
+
+.navbar {
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.3rem 3.5rem;
+    /* Add padding as needed (10px converted to rem) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.8rem;
+}
+
+.banner {
+    position: relative;
+    background-image: url('../images/tuna.png');
+    background-size: cover;
+    background-position: center center;
+    height: 29.125rem;
+    border-radius: 0.5rem;
+}
+
+.banner-text {
+    display: flex;
+    width: 51.5rem;
+    height: 5.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.125rem;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+/* Style for the two-boxes container */
+.two-boxes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Style for the left box container */
+.left-box {
+    grid-column: span 1;
+    /* Span 1 column */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    flex-wrap: wrap;
+    /* Allow boxes to wrap to the next line if needed */
+    gap: 2rem;
+    width: 51%;
+    /* Let the box expand to fit its content */
+    max-width: 100%;
+    /* Ensure it doesn't exceed the parent's width */
+    height: auto;
+    /* Let the height adjust based on content */
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: rgba(251, 143, 29, 0.10);
+    padding: 1rem 1.5rem;
+}
+
+
+/* Style for box headers */
+.box-header {
+    font-weight: bold;
+}
+
+/* Style for box subtext */
+.box-subtext {
+    color: #666;
+}
+
+/* Right Box */
+.right-box {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    /* Display items vertically */
+    gap: 2rem;
+    width: 49%;
+    height: auto;
+    border-radius: 0.5rem;
+    background: rgba(81, 131, 60, 0.10);
+    padding: 10px;
+}
+
+/* Tags Container */
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Tags Title */
+.tags-title {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.25rem;
+    /* 200% */
+}
+
+/* Individual Tag */
+.tag {
+    width: auto;
+    height: 1.875rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    background: #EB6E13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    /* 200% */
+    padding: 5px 10px;
+}
+
+
+/* Main Container for Left Aside */
+
+/* Aside Section - Jump to */
+.jump-to-chapter {
+    /* Adjust the width as needed */
+    padding: 20px;
+    color: #EB6E13;
+    align-self: flex-start;
+}
+
+/* Style for Jump to Chapter Header */
+.jump-to-chapter h2 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-top: 0;
+    /* Remove default margin */
+}
+
+/* Style for Jump to Chapter Links */
+.jump-to-chapter a {
+    display: block;
+    /* Make links block-level for better spacing */
+    margin-bottom: 10px;
+    /* Add vertical spacing between links */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+/* Hover effect for Jump to Chapter Links */
+.jump-to-chapter a {
+    color: #EB6E13;
+    /* Change color on hover */
+}
+
+
+/* Aside Section - Plan Your Trip Card */
+.plan-your-trip {
+    width: 20%;
+    /* Adjust the width as needed */
+    padding: 20px;
+    /* Add other styling as needed */
+}
+
+/* Style for the Plan Your Trip Card */
+/* Style for the Plan Your Trip Card */
+.plan-your-trip .card {
+    width: 13.375rem;
+    height: 11.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.19625rem;
+    background: #FFF;
+    box-shadow: 0px 3.89312px 23.35869px 0px rgba(189, 189, 189, 0.23);
+    border-radius: 5px;
+    padding: 0;
+    /* Add other card styling as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.plan-your-trip .card .card-caption {
+    color: #EB6E13;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144%;
+    /* 1.98rem */
+    width: 9.5rem;
+    height: 1.375rem;
+    flex-shrink: 0;
+    padding: 0.94rem 1.94rem;
+    margin: 0;
+}
+
+/* Style for the Card Image */
+.plan-your-trip .card img {
+    width: 13.375rem;
+    height: 5.5rem;
+    flex-shrink: 0;
+    border-radius: 0.09813rem 0.09813rem 0rem 0rem;
+    max-width: 100%;
+    /* Make the image scale to the card's width */
+    /* Allow the image to maintain its aspect ratio */
+}
+
+.plan-your-trip button {
+    color: #FFF;
+    margin-top: 0.56rem;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 13.375rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: #EB6E13;
+    border: 0;
+}
+
+/* Main content articles */
+h2.article-title {
+    display: flex;
+    height: 3.125rem;
+    flex-direction: column;
+    justify-content: center;
+    color: #EB6E13;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+    /* 100% */
+}
+
+.article-content {
+    display: flex;
+    height: 12.375rem;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin-bottom: 3rem;
+    /* 200% */
+}
+
+img.article-image {
+    width: 100%;
+    /* Occupy the entire width of the card */
+    height: auto;
+    /* Let the height adjust based on the image aspect ratio */
+    flex-shrink: 0;
+    border-radius: 0.09813rem 0.09813rem 0rem 0rem;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+hr {
+    height: 0.03125rem;
+    border: none;
+    background-color: rgba(235, 110, 19, 0.50);;
+}
+
+span.orange-text {
+    color: #EB6E13;
+    white-space: nowrap;
+}
